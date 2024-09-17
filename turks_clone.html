@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derik's Kebab and Wraps</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      .social-icons a {
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #dc3545 !important;
+      }
+
+      .navbar-nav .nav-item .nav-link {
+        border: none;
+        transition: all 0.3s ease;
+        font-weight: bold;
+      }
+
+      .navbar-nav .nav-item .nav-link:hover {
+        border-radius: 20px;
+        color: #fff !important;
+        background-color: #dc3545;
+      }
+
+      .navbar-brand {
+        width: 150px;
+        height: 60px;
+      }
+
+      .logo-container {
+        width: 100%;
+        height: 100%;
+        background-image: url('./images/Deriks-logo.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .card-img-container {
+        height: 200px;
+        overflow: hidden;
+      }
+
+      .card-img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .fake-map-container {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .fake-map-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      #promo {
+        background-color: #f8f9fa;
+        border-top: 3px solid #dc3545;
+        border-bottom: 3px solid #dc3545;
+      }
+
+      #promo .btn-primary {
+        background-color: #dc3545;
+        border-color: #dc3545;
+        transition: all 0.3s ease;
+      }
+
+      #promo .btn-primary:hover {
+        background-color: #c82333;
+        border-color: #bd2130;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col text-end mt-2">
+          <div class="social-icons">
+            <a href="#" class="me-3 text-dark"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="me-3 text-dark"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-5">
+      <a class="navbar-brand" href="#">
+        <div class="logo-container"></div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle btn btn-outline-danger rounded-pill mx-1" href="#" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#our-story">OUR STORY</a></li>
+              <li><a class="dropdown-item" href="#products">PRODUCTS</a></li>
+              <li><a class="dropdown-item" href="#store-location">STORE LOCATION</a></li>
+              <li><a class="dropdown-item" href="#franchising">FRANCHISING</a></li>
+              <li><a class="dropdown-item" href="#lease-areas">LEASE AREAS</a></li>
+              <li><a class="dropdown-item" href="#contact-us">CONTACT US</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#order">Login</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- HOME -->
+    <section class="container mx-auto my-lg-5 h-100">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-4">
+            Everyday...<br>
+            Make it a<br>
+            <span class="text-danger">Shawarma</span> day!
+          </h1>
+          <blockquote class="blockquote">
+            <p class="lead mb-0">
+              DERIK's is a top brand in its industry in the Philippines, known for delivering high-quality products that
+              prioritize customer satisfaction. It pioneered the innovation of serving Pita Wraps in a quicker, more
+              convenient, and smoke-free manner, which helped boost its popularity and demand in major malls across the
+              country.
+            </p>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <img src="./images/Home-shawarma.png" alt="Turks Wrap" class="img-fluid">
+        </div>
+      </div>
+    </section>
+    <!-- HOME END -->
+
+
+
+    <!-- MENU -->
+    <section class="container-fluid d-flex flex-column py-xl-5 my-xl-5" style="min-height: 100vh">
+      <div class="row">
+        <div class="col-12 text-center my-4">
+          <h2 class="display-5">Explore Our Menu</h2>
+          <p class="lead">Check out our delicious offerings below!</p>
+        </div>
+      </div>
+
+      <div class="row flex-grow-1 px-xl-5">
+        <div class="col-12" style="max-height: 150vh; overflow-y: auto;">
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-container">
+                  <img
+                    src="https://lifeloveandgoodfood.com/wp-content/uploads/2020/04/Chicken-Shawarma_09_1200x1200.jpg"
+                    class="card-img-top" alt="Beef Shawarma Wrap">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Beef Shawarma Wrap</h5>
+                  <p class="card-text">Delicious beef shawarma wrap with fresh veggies.</p>
+                  <p class="card-text"><strong>₱150</strong></p>
+                  <a href="#order" class="btn btn-primary mt-auto">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-container">
+                  <img src="https://whatsgabycooking.com/wp-content/uploads/Chicken-Shawarma-Stuffed-Pita-Pockets.jpg"
+                    class="card-img-top" alt="Chicken Shawarma Wrap">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Chicken Shawarma Wrap</h5>
+                  <p class="card-text">Juicy chicken shawarma wrap with garlic sauce.</p>
+                  <p class="card-text"><strong>₱140</strong></p>
+                  <a href="#order" class="btn btn-primary mt-auto">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-container">
+                  <img src="https://thebusybaker.ca/wp-content/uploads/2018/04/easy-korean-beef-rice-bowls-fbig2.jpg"
+                    class="card-img-top" alt="ce Meal">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">ce Meal</h5>
+                  <p class="card-text">Savory beef shawarma served with aromatic rice.</p>
+                  <p class="card-text"><strong>₱180</strong></p>
+                  <a href="#order" class="btn btn-primary mt-auto">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-container">
+                  <img
+                    src="https://www.iheartnaptime.net/wp-content/uploads/2022/05/I-Heart-Naptime-chicken-and-rice-11.jpg"
+                    class="card-img-top" alt="Chicken Rice Meal">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Chicken Rice Meal</h5>
+                  <p class="card-text">Flavorful chicken shawarma served with fluffy rice.</p>
+                  <p class="card-text"><strong>₱160</strong></p>
+                  <a href="#order" class="btn btn-primary mt-auto">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-container">
+                  <img src="https://cookingwithayeh.com/wp-content/uploads/2024/03/Falafel-Wrap-SQ-1.jpg"
+                    class="card-img-top" alt="Falafel Wrap">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Falafel Wrap</h5>
+                  <p class="card-text">Crispy falafel wrap with tahini sauce and veggies.</p>
+                  <p class="card-text"><strong>₱120</strong></p>
+                  <a href="#order" class="btn btn-primary mt-auto">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-container">
+                  <img src="https://i.ytimg.com/vi/wEdzGKgDguk/sddefault.jpg" class="card-img-top" alt="Kebab Platter">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Kebab Platter</h5>
+                  <p class="card-text">Mixed kebab platter with rice and grilled vegetables.</p>
+                  <p class="card-text"><strong>₱250</strong></p>
+                  <a href="#order" class="btn btn-primary mt-auto">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-container">
+                  <img
+                    src="https://www.slenderkitchen.com/sites/default/files/styles/gsd-1x1/public/recipe_images/hummus-bowl.jpg"
+                    class="card-img-top" alt="Hummus Bowl">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Hummus Bowl</h5>
+                  <p class="card-text">Creamy hummus bowl with pita bread and olive oil.</p>
+                  <p class="card-text"><strong>₱100</strong></p>
+                  <a href="#order" class="btn btn-primary mt-auto">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-container">
+                  <img src="https://www.onceuponachef.com/images/2023/06/greek-salad-1-1200x1477.jpg"
+                    class="card-img-top" alt="Greek Salad">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Greek Salad</h5>
+                  <p class="card-text">Fresh Greek salad with feta cheese and olives.</p>
+                  <p class="card-text"><strong>₱80</strong></p>
+                  <a href="#order" class="btn btn-primary mt-auto">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-container">
+                  <img src="https://cleobuttera.com/wp-content/uploads/2018/03/lifted-baklava-720x540.jpg"
+                    class="card-img-top" alt="Baklava">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Baklava</h5>
+                  <p class="card-text">Sweet and flaky baklava dessert with honey and nuts.</p>
+                  <p class="card-text"><strong>₱120</strong></p>
+                  <a href="#order" class="btn btn-primary mt-auto">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-container">
+                  <img
+                    src="https://lifeloveandgoodfood.com/wp-content/uploads/2020/04/Chicken-Shawarma_09_1200x1200.jpg"
+                    class="card-img-top" alt="Turks Special Wrap">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Turks Special Wrap</h5>
+                  <p class="card-text">Our signature wrap with a mix of beef and chicken.</p>
+                  <p class="card-text"><strong>₱170</strong></p>
+                  <a href="#order" class="btn btn-primary mt-auto">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-container">
+                  <img
+                    src="https://lifeloveandgoodfood.com/wp-content/uploads/2020/04/Chicken-Shawarma_09_1200x1200.jpg"
+                    class="card-img-top" alt="Vegetarian Platter">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Vegetarian Platter</h5>
+                  <p class="card-text">Assorted vegetarian dishes with falafel and hummus.</p>
+                  <p class="card-text"><strong>₱160</strong></p>
+                  <a href="#order" class="btn btn-primary mt-auto">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-img-container">
+                  <img
+                    src="https://lifeloveandgoodfood.com/wp-content/uploads/2020/04/Chicken-Shawarma_09_1200x1200.jpg"
+                    class="card-img-top" alt="Lentil Soup">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Lentil Soup</h5>
+                  <p class="card-text">Hearty lentil soup served with crispy pita chips.</p>
+                  <p class="card-text"><strong>₱100</strong></p>
+                  <a href="#order" class="btn btn-primary mt-auto">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MENU END -->
+
+
+    <!-- PROMO SECTION -->
+    <section id="promo" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="display-4 mb-4">Special Offer!</h2>
+            <p class="lead mb-4">Get 20% off on all wraps this week! Use code WRAP20 at checkout.</p>
+            <a href="#order-form" class="btn btn-primary btn-lg">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROMO SECTION END -->
+
+    <!-- ORDER FORM -->
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-12 text-center my-4">
+          <h2 class="display-5">Place Your Order</h2>
+          <p class="lead">Fill out the form below to place your order.</p>
+        </div>
+      </div>
+      <form>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone number</label>
+          <input type="tel" class="form-control" id="phone" required>
+        </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Delivery address</label>
+          <input type="text" class="form-control" id="address" required>
+        </div>
+        <div class="mb-3">
+          <label for="orderDetails" class="form-label">Order details</label>
+          <textarea class="form-control" id="orderDetails" rows="3" required></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="paymentMethod" class="form-label">Payment method</label>
+          <select class="form-select" id="paymentMethod" required>
+            <option value="">Choose...</option>
+            <option value="cash">Cash on delivery</option>
+            <option value="card">Credit/Debit Card</option>
+            <option value="online">Online Payment</option>
+          </select>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="terms" required>
+          <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Place Order</button>
+      </form>
+    </section>
+    <!-- ORDER FORM END -->
+
+
+    <!-- FAKE MAP SECTION -->
+    <section id="store-location" class="container my-5">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h2 class="display-5">Our Location</h2>
+          <p class="lead">Find us at our convenient location</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="fake-map-container">
+            <img src="./images/fakemap.jpg" alt="Store Location Map" class="img-fluid">
+          </div>
+          <div class="mt-3">
+            <p><strong>Address:</strong> 123 Shawarma Street, Kebab City, Philippines</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Hours:</strong> Monday - Sunday: 10:00 AM - 10:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAKE MAP SECTION END -->
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2023 Turks. All rights reserved.</p>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
